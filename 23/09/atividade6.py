@@ -1,20 +1,20 @@
 
 def transformar_unidades(numero,unidade):
-
-
-
+    media_cm = numero/100
+    media_m = numero * 100
     while True:
         if unidade != '':
             break
 
         if unidade == "cm" or unidade == 'CM':
-            print(f"{numero} cm é igual a {numero/100:.2f}m.")
+            print(f"{numero} cm é igual a {media_cm:.2f}m.")
             break
         else:
             print("Verfique o nome digitado.")
-    while True:
+    
+            
 elif unidade == "m" or unidade == 'M':
-print(f"numero m é igual a {numero * 100:.2f}cm.")
+print(f"numero m é igual a {media_m:.2f}cm.")
 else:
 print("Unidade invalida use m ou cm. ")
     
